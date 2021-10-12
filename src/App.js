@@ -1,7 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "../src/components/NavBar";
 
-function App() {
+
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,16 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+}
+
+export default App; */
+
+function App(){
+  return(
+    <div>
+      <NavBar/>
     </div>
   );
 }
