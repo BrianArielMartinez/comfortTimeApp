@@ -1,7 +1,7 @@
-import React from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
-import logo from "../image/logo.png"
-
+import logo from "/Users/Usuario/comfortTime-app/src/assets/images/logo.png"
+import { CartWidget } from './CartWidget'
+import "/Users/Usuario/comfortTime-app/src/style/NavBar.css"
 
 
 export const NavBar = () => {
@@ -9,17 +9,19 @@ export const NavBar = () => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <div>
+                    <div className="logo">
                         <a href="#home" title="COMFORTTIME" rel="home">
-                        <img src={logo} alt=""/>
+                            <img src={logo} alt=""/>
                         </a>
                     </div>
-                    {/* <Navbar.Brand href="#home">ComfortTimeTienda</Navbar.Brand> */}
-                    <Nav className="me-left">
+                    <Nav className="me-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#features">Productos</Nav.Link>
                         <Nav.Link href="#pricing">Contacto</Nav.Link>
-                    </Nav> 
+                    </Nav>
+
+                    <CartWidget/>
+
                 </Container>
             </Navbar>
         </div>
