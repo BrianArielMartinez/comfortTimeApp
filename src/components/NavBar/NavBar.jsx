@@ -1,7 +1,7 @@
 import { Container, Navbar, Nav } from 'react-bootstrap'
-import logo from "/Users/Usuario/comfortTime-app/src/assets/images/logo.png"
+import logo from "assets/images/logo.png"
 import { CartWidget } from './CartWidget'
-import "/Users/Usuario/comfortTime-app/src/style/NavBar.css"
+import "style/NavBar.css"
 
 
 export const NavBar = () => {
